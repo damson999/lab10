@@ -1,0 +1,18 @@
+@base           <http://raw.githubusercontent.com/damson999/lab10/main/foaf.ttl> .
+@prefix ex:     <http://raw.githubusercontent.com/damson999/lab10/main/foaf.ttl#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbp:    <http://dbpedia.org/resource/> .
+
+ex:ignacio a foaf:Person ;
+    foaf:name "Ignacio" ;
+    foaf:age "25"^^xsd:integer ;
+    foaf:img <https://cmsapi-frontend.naruto-official.com/site/api/naruto/Image/get?path=/naruto/import/images/naruto01/001%EF%BD%9E100/001/C062_0108.jpg> ;
+    foaf:knows <http://users.dcc.uchile.cl/~ahogan/foaf.ttl#ah> ,
+               <http://raw.githubusercontent.com/juansebm/lab10_webofdata/main/foaf.ttl#juanvale> ,
+               <http://raw.githubusercontent.com/Marmaduke23/watos/refs/heads/main/foaf.ttl#jjj> ;
+    foaf:interest dbp:Gym ,
+                  dbp:Naruto ,
+                  dbp:Artificial_intelligence .
