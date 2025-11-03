@@ -2,10 +2,10 @@
 @prefix ex:     <http://raw.githubusercontent.com/damson999/lab10/main/foaf.ttl#> .
 @prefix foaf:   <http://xmlns.com/foaf/0.1/> .
 @prefix dc:     <http://purl.org/dc/elements/1.1/> .
-@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 @prefix dbr:    <http://dbpedia.org/resource/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix social: <http://users.dcc.uchile.cl/~ahogan/social.ttl#> .
 
 <> a foaf:PersonalProfileDocument ;
