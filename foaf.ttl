@@ -1,18 +1,30 @@
 @base           <http://raw.githubusercontent.com/damson999/lab10/main/foaf.ttl> .
 @prefix ex:     <http://raw.githubusercontent.com/damson999/lab10/main/foaf.ttl#> .
 @prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix dc:     <http://purl.org/dc/elements/1.1/> .
 @prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:   <http://www.w3.org/2000/01/rdfs-schema#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 @prefix dbr:    <http://dbpedia.org/resource/> .
+@prefix social: <http://users.dcc.uchile.cl/~ahogan/social.ttl#> .
+
+<> a foaf:PersonalProfileDocument ;
+   dc:title "Lab 10" ;
+   dc:creator ex:ignacio ;
+   dc:date "2025-11-04"^^xsd:date ;
+   foaf:primaryTopic ex:ignacio .
 
 ex:ignacio a foaf:Person ;
-    foaf:name "Ignacio" ;
-    foaf:age "25"^^xsd:integer ;
+    foaf:name "Ignacio Rodríguez" ;
+    foaf:age 25 ;
     foaf:img <https://cmsapi-frontend.naruto-official.com/site/api/naruto/Image/get?path=/naruto/import/images/naruto01/001%EF%BD%9E100/001/C062_0108.jpg> ;
     foaf:based_near dbr:Chile ;
-    foaf:knows <http://raw.githubusercontent.com/juansebm/lab10_webofdata/main/foaf.ttl#juanvale> ,
-               <http://raw.githubusercontent.com/Marmaduke23/watos/refs/heads/main/foaf.ttl#jjj> ;
-    foaf:interest dbr:Anime ,
-                  dbr:Artificial_intelligence ,
-                  dbr:Bodybuilding .
+    foaf:knows 
+        <http://raw.githubusercontent.com/juansebm/lab10_webofdata/main/foaf.ttl#juanvale> ,
+        <http://raw.githubusercontent.com/Marmaduke23/watos/refs/heads/main/foaf.ttl#jjj> ;
+    foaf:interest 
+        dbr:Anime ,
+        dbr:Artificial_intelligence ,
+        dbr:Bodybuilding ;
+    social:likesMovie dbr:Naruto ;
+    social:hasSpiritAnimal dbr:Fox .
